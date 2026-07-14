@@ -1,0 +1,25 @@
+name: Hello-world
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build phase
+        run: echo "Building source code"
+
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test phase
+        run: echo "Testing source code"
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy phase
+        run: echo "Deploying source code"
+
+
+      
